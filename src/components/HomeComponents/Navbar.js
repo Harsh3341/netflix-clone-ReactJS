@@ -35,6 +35,11 @@ const Nav = styled.nav`
     @media (max-width: 620px){
         padding: 0 30px;
     }
+
+    /* @media (max-width: 950px){
+        padding: 0 15px;
+        
+    } */
 `;
 
 const Logo = styled.a`

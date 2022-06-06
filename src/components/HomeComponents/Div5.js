@@ -56,7 +56,8 @@ const CTA = styled.div`
     margin:0 10.4vw;
 
     @media (max-width: 950px){
-        flex-direction:column;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
         margin:0 ;
         
     }
@@ -120,6 +121,11 @@ const DivRight = styled.div`
     width:100%;
     display: block;
     
+    }
+
+    @media (max-width: 950px){
+        width: 64%;
+        
     }
 `;
 export default Div5;

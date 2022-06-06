@@ -9,6 +9,17 @@ function Div3() {
 
                     <DivRight>
                         <img src="/images/mobile-0819.jpg" alt="" />
+                        <OverDiv>
+                            <Banner>
+                                <img src="/images/boxshot.png" alt="" />
+                            </Banner>
+                            <CenterItem>
+                                Downloading...
+                            </CenterItem>
+                            <DownloadGIF>
+                                <img src="/images/download-icon.gif" alt="" />
+                            </DownloadGIF>
+                        </OverDiv>
                     </DivRight>
                     <DivLeft>
 
@@ -57,7 +68,9 @@ const CTA = styled.div`
     margin:0 10.4vw;
 
     @media (max-width: 950px){
-        flex-direction:column;
+        /* flex-direction:column; */
+        flex-wrap: wrap-reverse;
+        justify-content: center;
         margin:0 ;
         
     }
@@ -67,7 +80,6 @@ const CTA = styled.div`
 const DivLeft = styled.div`
 
 max-width: fit-content;
-/* padding-right: 20px; */
 
 h1{
     font-size: 3.125rem;
@@ -93,11 +105,6 @@ p{
        text-align: center;
        font-size: 1.25rem;
     }
-
-    @media (max-width: 950px){
-        font-size: 1.125rem;
-        
-    }
 }
 
 @media (max-width: 950px){
@@ -120,19 +127,66 @@ const DivRight = styled.div`
     max-height:60vh;
     width:100%;
     display: block;
-    }
 
-    video{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 21%;
-    left: 13%;
-    max-width: 73%;
-    max-height: 54%;
-    z-index: -1;
     }
     
+
+`;
+
+const OverDiv = styled.div`
+
+    background-color: black;
+    position: absolute;
+    top: 68%;
+    left: 10%;
+    max-width: 78%;
+    width: 100%;
+    max-height: 26%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    
+`;
+
+const Banner = styled.div`
+
+    /* background-color: red; */
+    max-width: 16%;
+    height: 85%;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+`;
+
+const CenterItem = styled.div`
+
+    min-width: 50%;
+    margin: 7px 0;
+
+    @media (max-width: 950px){
+        font-size: 0.9rem;
+        
+    }
+    
+
+`;
+
+const DownloadGIF = styled.div`
+
+    height: 70%;
+
+
+    img{
+        height: 100%;
+    }
 
 `;
 export default Div3;

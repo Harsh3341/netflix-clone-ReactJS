@@ -47,6 +47,11 @@ const Content = styled.div`
     justify-content: center;
     padding: 45px;
 
+    @media (max-width: 950px){
+        padding: 10px;
+        
+    }
+
 `;
 
 const CTA = styled.div`
@@ -113,13 +118,14 @@ p{
 const DivRight = styled.div`
 
     max-height:60vh;
-    /* width: 700px; */
     position: relative;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
     img{
-    /* height:  */
-    width:100%;
+    width:91%;
     display: block;
     }
 
@@ -133,7 +139,10 @@ const DivRight = styled.div`
     max-height: 54%;
     z-index: -1;
     }
-    
+    @media (max-width: 950px){
+        width: 64%;
+        
+    }
 
 `;
 export default Div2;
