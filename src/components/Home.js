@@ -8,20 +8,18 @@ import Div6 from "./HomeComponents/Div6";
 import Footer from "./HomeComponents/Footer";
 
 function Home() {
-
-    return (
-        <div>
-            <Navbar />
-            <Div1 />
-            <Div2 />
-            <Div3 />
-            <Div4 />
-            <Div5 />
-            <Div6 />
-            <Footer />
-        </div>
-    )
-
+  return (
+    <div>
+      <Navbar />
+      <Div1 />
+      <Div2 />
+      <Div3 />
+      <Div4 />
+      <Div5 />
+      <Div6 />
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;
