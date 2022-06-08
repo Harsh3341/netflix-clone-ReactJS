@@ -1,10 +1,14 @@
 import Row from "./Row";
 import requests from "../request";
 import React from "react";
+import Banner from "./Banner";
+import NavBar from "./NavBar";
 
 function Main() {
   return (
     <div>
+      <NavBar />
+      <Banner />
       <Row
         title="Netflix Originals"
         isLargeRow

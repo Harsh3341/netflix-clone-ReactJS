@@ -7,7 +7,7 @@ function Login() {
       <Content>
         <CTA>
           <h1>Sign In</h1>
-          <Form action="/browse">
+          <Form action="/main">
             <input placeholder="Email or phone number"></input>
             <input placeholder="Password"></input>
             <a href="/#">
