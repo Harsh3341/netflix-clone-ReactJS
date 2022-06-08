@@ -3,10 +3,11 @@ import requests from "../request";
 import React from "react";
 import Banner from "./Banner";
 import NavBar from "./NavBar";
+import "./Main.css";
 
 function Main() {
   return (
-    <div>
+    <div className="MainDiv">
       <NavBar />
       <Banner />
       <Row
